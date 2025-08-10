@@ -43,14 +43,14 @@ cd yournextrip-parallax
 
 ### File Structure
 
-yournextrip-parallax/
+```yournextrip-parallax/
 │
 ├── index.html # Main HTML file
 ├── styles.css # Custom styles
 ├── assets/
 │ └── logo-nobg.png # Logo used for navbar branding
 └── README.md # Project documentation
-
+```
 
 ---
 
