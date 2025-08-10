@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure HTML/CSS Parallax Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bookstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg p-3 bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <div class="row w-100 align-items-center">
+          <div class="col-4 d-flex">
+            <form class="d-flex w-100" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+
+          <div class="col-4 text-center">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./assets/logo-nobg.png"
+                alt="Logo"
+                height="50"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
+
+          <div class="col-4">
+            <button
+              class="navbar-toggler ms-auto mb-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Discover</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Trips</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Reviews</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Book A Room</a></li>
+                    <li><a class="dropdown-item" href="#">Book A Flight</a></li>
+                    <li><a class="dropdown-item" href="#">Book A Cab</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">My Profile</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Parallax Content -->
+
+    <section id="home" class="parallax bg1">
+      <div class="overlay">
+        <h1>Welcome to YourNexTrip</h1>
+        <h3>Your own travel planner.</h3>
+        <h5>Scroll down for more &#8595;</h5>
+      </div>
+    </section>
+
+    <section id="personalized" class="content">
+      <div class="inner">
+        <h5 class="text-center mb-1">Based on your vacation</h5>
+        <h2 class="text-center mb-5">Get Personalized Destination</h2>
+
+        <div class="rounded shadow-lg p-4 mb-5 bg-white">
+          <form>
+            <div class="row g-3 align-items-end">
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Your Location</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Kochi, India"
+                />
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <label class="form-label">Start date</label>
+                <input
+                  type="date"
+                  class="form-control text-muted"
+                  id="startDate"
+                />
+              </div>
+
+              <div class="col-md-2 col-sm-6">
+                <label class="form-label">End date</label>
+                <input
+                  type="date"
+                  class="form-control text-muted"
+                  id="endDate"
+                />
+              </div>
+
+              <div class="col-md-3 col-sm-6">
+                <label class="form-label">Travellers</label>
+                <select class="form-select">
+                  <option>1 Adult</option>
+                  <option>2 Adults</option>
+                  <option>3 Adults</option>
+                  <option>4+ People</option>
+                </select>
+              </div>
+
+              <div class="col-md-2 col-sm-12 text-sm-start">
+                <button type="submit" class="btn btn-dark w-100 fw-semibold">
+                  Get It
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-destinations" class="parallax bg2">
+      <div class="container">
+        <h5 class="text-center text-white mb-1">Your favourite</h5>
+        <h2 class="text-center text-white mb-5">Top Destinations</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1492136344046-866c85e0bf04?q=80&w=1464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Paris"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris, France</h5>
+                <p class="card-text">
+                  City of love and lights. Discover iconic sights and romantic
+                  vibes.
+                </p>
+                <a href="#" class="btn btn-dark">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="Bali"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bali, Indonesia</h5>
+                <p class="card-text">
+                  Tropical paradise filled with serene beaches and lush
+                  greenery.
+                </p>
+                <a href="#" class="btn btn-dark">Know More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1553608622-8c715b1b5145?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="New York"
+              />
+              <div class="card-body">
+                <h5 class="card-title">New York, USA</h5>
+                <p class="card-text">
+                  The city that never sleeps. Experience energy like nowhere
+                  else.
+                </p>
+                <a href="#" class="btn btn-dark">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content">
+      <div class="inner">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint ea
+          natus quod numquam tempora deleniti placeat, perspiciatis ratione
+          fugit adipisci facere ab illo nemo quaerat magni laboriosam vel
+          aspernatur assumenda, id at dolores, culpa quas amet. Quam voluptates
+          minus asperiores blanditiis et. Nobis cupiditate, magnam, atque
+          voluptatibus enim, est sapiente doloribus incidunt rem repellendus
+          corporis officia! Deleniti eligendi eaque fugiat quo non atque a
+          suscipit delectus in nam illo reprehenderit magnam quam, vero
+          molestiae nesciunt praesentium dicta blanditiis. Ducimus, totam ad
+          excepturi et autem odit aperiam esse pariatur dicta, voluptate
+          expedita, nostrum vel culpa velit quod aliquid distinctio enim.
+        </p>
+      </div>
+    </section>
+
+    <section id="featured-destinations" class="parallax bg3">
+      <div class="container">
+        <h6 class="text-center mb-1">Most loved and</h6>
+        <h2 class="text-center mb-4">Featured Destinations</h2>
+
+        <div
+          id="multiCardCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active my-5">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1512734099960-65a682cbfe2b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="London"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">London, UK</h5>
+                      <p class="card-text">
+                        Royal heritage and modern culture in one city.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="Sydney"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Sydney, Australia</h5>
+                      <p class="card-text">
+                        Sun, surf, and the stunning Opera House await you.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="Rio de Janeiro"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Rio, Brazil</h5>
+                      <p class="card-text">
+                        Carnivals, beaches, and breathtaking landscapes.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item my-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/flagged/photo-1559717865-a99cac1c95d8?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="Dubai"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Dubai, UAE</h5>
+                      <p class="card-text">
+                        Luxury shopping and ultramodern architecture await.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="Toronto"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Toronto, Canada</h5>
+                      <p class="card-text">
+                        A diverse, clean city near the iconic Niagara Falls.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 d-none d-md-block">
+                  <div class="card shadow-lg">
+                    <img
+                      src="https://images.unsplash.com/photo-1583422409516-2895a77efded?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      class="card-img-top"
+                      alt="Barcelona"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Barcelona, Spain</h5>
+                      <p class="card-text">
+                        A city with Gaudí's masterpieces and sunny beaches.
+                      </p>
+                      <a href="#" class="btn btn-dark">Know More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#multiCardCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#multiCardCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark rounded-circle"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h6 class="text-center">Book your next trip with us</h6>
+        <h1 class="text-center mb-4">Get in Touch</h1>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputName" class="form-label">Your Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputName"
+              placeholder="Enter your name here"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Enter your Email here"
+            />
+          </div>
+          <div class="invalid-feedback">Please enter a valid email address</div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Your Message</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="5"
+              placeholder="Type your message here"
+            ></textarea>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out from promotional mails
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="faq" class="py-5 bg-dark">
+      <div class="container">
+        <h6 class="text-center text-white">Know more about</h6>
+        <h1 class="text-center mb-4 text-white">Frequently Asked Questions</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Which is the most sold pakage?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae porro id aperiam eos, quod numquam alias natus neque,
+                delectus soluta pariatur odio, expedita repellat doloribus in
+                eveniet architecto aut minima!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Is cancellation possible?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut
+                asperiores numquam assumenda sed iure. Doloribus ullam est earum
+                numquam excepturi fugit id accusantium voluptatem nisi. Ex,
+                soluta officiis! Explicabo, quae.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                What is your refund policy?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                pariatur veniam tenetur ea aliquid, architecto dolorem
+                reiciendis accusantium autem necessitatibus adipisci, non,
+                voluptas tempora sit. Mollitia error amet fugit expedita.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+      <hr class="shadow-sm mb-4" />
+      <p>&copy; 2025 YourNexTrip. All rights reserved.</p>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+    integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+    crossorigin="anonymous"
+  ></script>
+</html>
