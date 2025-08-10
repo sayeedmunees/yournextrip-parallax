@@ -4,6 +4,15 @@ Welcome to **YourNexTrip**, a modern travel planning website with parallax desig
 
 ---
 
+## Screenshots
+
+Here’s what YourNexTrip looks like:
+
+### Home Page
+![Home Page](assets/home.png)
+
+----
+
 ## Live Demo & Repository
 
 - **Live Site:** [http://sayeedmunees.github.io/yournextrip-parallax/](http://sayeedmunees.github.io/yournextrip-parallax/)
